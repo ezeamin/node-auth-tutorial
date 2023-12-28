@@ -1,0 +1,24 @@
+{
+  "name": "node-auth-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "tsnd --respawn --clear ./src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "pnpm run build && node ./dist/app.js",
+    "lint": "eslint src/**/*.ts --fix && prettier . -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
