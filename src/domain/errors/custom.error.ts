@@ -22,7 +22,7 @@ export class CustomError extends Error {
         return new CustomError(404, message);
     }
 
-    static unknown (message: string) {
+    static unknown (message: string = "Internal Server Error") {
         console.error(message)
         return new CustomError(500, 'Internal server error');
     }
